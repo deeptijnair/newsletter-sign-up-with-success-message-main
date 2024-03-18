@@ -1,0 +1,106 @@
+body{
+    background-color: hsl(235, 19%, 25%);
+    width: 1440px;
+    font-family: 'Roboto';
+}
+
+#container{
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    width: 850px;
+    height: 630px;
+    border-radius: 30px;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+#firstPage{
+    display: block;
+    width: 250px;
+    margin-left: 60px;
+    margin-top: 110px;
+}
+
+#image{
+    margin-left: 115px;
+    margin-top: 18px;
+    
+}
+
+#update{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.button{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    font-family: 'HankenGrotesk-Medium';
+    font-size: 18px;
+    padding-top: 1px;
+}
+
+
+
+#thankYouPage{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
