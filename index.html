@@ -6,43 +6,49 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+  
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
 
   <!-- Sign-up form start -->
-<section id="container">
-    <section id="firstPage">
-      <section id="update">Stay updated!</section>
-      <section><p>Join 60,000+ product managers receiving monthly updates on:</p>
+<section class="container">
+  <div id="firstPage">
+    <section id="leftPage">
+      <div id="update">Stay updated!</div>
+      <div id="paragraph1"><p>Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
+      <div id="paragraph2"><img src="./assets/images/icon-list.svg"> Product discovery and building what matters<br><br>
+        <img src="./assets/images/icon-list.svg"> Measuring to ensure updates are a success<br><br>
+        <img src="./assets/images/icon-list.svg">And much more!<br>
+      </div>
+      <section id="form">
+        
+        <label id="email-label">Email address<span id="email-error"></span></label>        
+        <input type="email" id="email-input" placeholder="email@company.com">  
+        <section id="submit"><button class="button" onclick="validateEmail()">Subscribe to monthly newsletter</button></section>  
       </section>
-      <section><p>Product discovery and building what matters
-                Measuring to ensure updates are a success
-                And much more!</p>
-      </section>
-      <section>Email address<br>
-        <input placeholder="email@company.com">  
-      </section>
-      <section id="submit"><button class="button">Subscribe to monthly newsletter</button></section>  
     </section>
 
     <section id="image">
       <img src="./assets/images/illustration-sign-up-desktop.svg">
     </section>
+  </div>
  <!-- Sign-up form end -->
 
 <!-- Success message start -->
-  <section id="thankYouPage">
-    <section>Thanks for subscribing!</section>
-    <section>A confirmation email has been sent to ash@loremcompany.com. 
-              Please open it and click the button inside to confirm your subscription.
-    </section>
-    <section id="submit"><button class="button">Dismiss message</button></section>
-  </section>
+  <div id="thankYouPage">
+    <div id="timage">
+    <img src="./assets/images/icon-success.svg">
+  </div>
+    <div id="thanks-info">Thanks for<br>subscribing!</div>
+    <div id="confirm-info">A confirmation email has been sent to<br> 
+      <div id="user-email"></div><div id="subscription"> Please open it and click</div><br> the button inside to confirm your subscription.
+    </div>
+    <div id="dismiss"><button class="button" onclick="dismissMessage()">Dismiss message</button></div>
+  </div>
 <!-- Success message end -->
  
 
@@ -52,6 +58,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Deepthi Jayachandran Nair</a>.
 </div>
+
+<script src="newsletter.js"></script>
 
 </body>
 </html>
